@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-
 <html>
+<head>
+    <title>My To Do List</title>
+    <style>
+        body {
+            background-color: cyan;
+            font-family: 'Bold anime', sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        ul {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>To Do List App</h1>
+    <ul>
+        <% todolist.forEach(function(todo, index) { %>
+        <li>
+            <a href="/todo/delete/<%= index %>">✘</a>
+            <a href="/todo/<%= index %>">✎</a>
+            <%- todo %>
+        </li>
+        <% }); %>
+    </ul>
 
-    <head>
-        <title>My shaandaar todolist</title>
-        <style>
-            a {
-                text-decoration: none;
-                color: black;
-            }
-
-        </style>
-    </head>
-
-    <body>
-        <h1>TrainWithShubham Community is Super Awesome</h1>
-        <ul>
-            <% todolist.forEach(function(todo, index) { %>
-            <li>
-                <a href="/todo/delete/<%= index %>">✘</a>
-                <a href="/todo/<%= index %>">✎</a>
-                <%- todo %>
-            </li>
-            <% }); %>
-        </ul>
-
-        <form action="/todo/add/" method="post">
-            <p>
-                <label for="newtodo">What shoud I do?</label>
-                <input type="text" name="newtodo" id="newtodo" autofocus />
-                <input type="submit" value="Add" />
-            </p>
-        </form>
-    </body>
-
+    <form action="/todo/add/" method="post">
+        <p>
+            <label for="newtodo">Tasks</label>
+            <input type="text" name="newtodo" id="newtodo" autofocus />
+            <input type="submit" value="Add" />
+        </p>
+    </form>
+</body>
 </html>
+
