@@ -19,14 +19,11 @@
             padding: 8px 16px;
             cursor: pointer;
         }
-        ul {
-            text-align: center;
-        }
     </style>
 </head>
 <body>
     <h1>To Do List App</h1>
-    <ul>
+    <ul style="text-align: center;">
         <% todolist.forEach(function(todo, index) { %>
         <li>
             <a href="/todo/delete/<%= index %>">✘</a>
@@ -45,4 +42,3 @@
     </form>
 </body>
 </html>
-
