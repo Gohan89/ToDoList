@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My To Do List</title>
+    <title>ToDoList App</title>
     <style>
         body {
-            background-color: cyan;
-            font-family: 'Bold anime', sans-serif;
+            background-color: #f8f8f8;
         }
         a {
             text-decoration: none;
             color: black;
         }
         input[type="submit"] {
-            background-color: blue;
+            background-color: red;
             color: white;
-            font-weight: bold;
             border: none;
-            padding: 8px 16px;
+            padding: 5px 10px;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>To Do List App</h1>
-    <ul style="text-align: center;">
+    <h1>My ToDo List</h1>
+    <ul>
         <% todolist.forEach(function(todo, index) { %>
         <li>
             <a href="/todo/delete/<%= index %>">✘</a>
@@ -35,7 +33,7 @@
 
     <form action="/todo/add/" method="post">
         <p>
-            <label for="newtodo">Tasks</label>
+            <label for="newtodo">My Tasks</label>
             <input type="text" name="newtodo" id="newtodo" autofocus />
             <input type="submit" value="Add" />
         </p>
