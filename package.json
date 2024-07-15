@@ -20,4 +20,16 @@
     "nyc": "^14.1.1",
     "supertest": "^4.0.2"
   }
+  "scripts": {
+    "start": "node app.js",        // Example start script for your application
+    "test": "mocha test/**/*.js"   // Example test script using Mocha, assuming tests are in 'test/' folder
+  },
+  "dependencies": {
+    // Your dependencies
+  },
+  "devDependencies": {
+    "mocha": "^x.x.x",             // Ensure Mocha is listed as a dev dependency
+    // Other dev dependencies like chai, supertest, etc.
+  }
 }
+
