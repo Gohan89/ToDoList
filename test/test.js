@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('./app'); // Adjust the path based on your actual file structure
+const app = require('../app'); // Adjusted path to app.js based on your directory structure
 const expect = require('chai').expect;
 
 describe('ToDo List App', function() {
@@ -35,4 +35,3 @@ describe('ToDo List App', function() {
             });
     });
 });
-
