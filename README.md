@@ -43,7 +43,7 @@ Images
 
 Usage
 Clone this repository.
-Set up a t2.micro EC2 instance on AWS with appropriate port openings.
+Set up a t2.medium EC2 instance on AWS with appropriate port openings.
 Install Jenkins, Node.js, npm, and Docker following the instructions in this repository.
 Configure Jenkins plugins and add necessary credentials.
 Set up a webhook in your GitHub repository to trigger builds on Jenkins.
