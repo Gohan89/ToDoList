@@ -37,9 +37,9 @@ Accessing Deployed Site:
 
 After successful deployment, access your site on port 8000 of your EC2 instance.
 Images
-![AWS EC2](https://images/AWS EC2.png)
-![WebHook](https://images/Webhook.png)
-![Application](https://images/Application.png)
+![AWS EC2](https://github.com/Gohan89/ToDoList/blob/main/images/AWS%20EC2.png)
+![WebHook](https://github.com/Gohan89/ToDoList/blob/main/images/Webhook.png)
+![Application](https://github.com/Gohan89/ToDoList/blob/main/images/Application.png)
 
 Usage
 Clone this repository.
